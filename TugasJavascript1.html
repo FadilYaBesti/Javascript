@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTabel Nilai</title>
+</head>
+<script language="Javascript">
+    var nilai = prompt("NILAI (0-100) : ", 0);
+    var hasil = "";
+    if (nilai >= 101)
+        hasil = "inputan tidak sesui";
+    else if (nilai >= 93)
+        hasil = "A";
+    else if (nilai >= 83)
+        hasil = "B";
+    else if (nilai >= 75)
+        hasil = "C";
+    else if (nilai >= 50)
+        hasil = "D";
+    else if (nilai >= 0)
+        hasil = "E";
+
+    document.write("Nilai Anda : " + hasil)
+
+</script>
+
+<body>
+
+</body>
+
+</html>

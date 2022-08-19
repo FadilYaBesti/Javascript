@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CALCULATOR </title>
+ </head>
+ <script languange="javascript">
+    function tambah(){
+     var bil1=parseFloat(document.CALCULATOR.bil1.value);
+     var bil2=parseFloat(document.CALCULATOR.bil2.value);
+     var hasil= bil1+bil2;
+     document.CALCULATOR.hasil.value=hasil;
+    }
+    function kurang(){
+     var bil1=parseFloat(document.CALCULATOR.bil1.value);
+     var bil2=parseFloat(document.CALCULATOR.bil2.value);
+     var hasil= bil1-bil2;
+     document.CALCULATOR.hasil.value=hasil;
+    }
+    function kali(){
+     var bil1=parseFloat(document.CALCULATOR.bil1.value);
+     var bil2=parseFloat(document.CALCULATOR.bil2.value);
+     var hasil= bil1*bil2;
+     document.CALCULATOR.hasil.value=hasil;
+    }
+    function bagi(){
+     var bil1=parseFloat(document.CALCULATOR.bil1.value);
+     var bil2=parseFloat(document.CALCULATOR.bil2.value);
+     var hasil= bil1/bil2;
+     document.CALCULATOR.hasil.value=hasil;
+    }
+    </script>
+
+<body>
+    
+<form name="CALCULATOR">
+  
+    <table style="background-color: " class="tabel">
+     <caption>CALCULATOR</caption>
+     <tr>
+      <td>Bilangan 1</td><td>:</td><td><input type="number" name="bil1"></td>
+     </tr>
+     <tr>
+      <td>Bilangan 2</td><td>:</td><td><input type="number" name="bil2"></td>
+     </tr>
+     <tr>
+      <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+     </tr>
+     <tr>
+      <td colspan="3" align="center">
+       <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+       <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+       <input class="tombol" type="button" onclick="kali()" value="  *  ">
+       <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+      </td>
+     </tr>
+    </table>
+   </form>
+  
+  </body>
+   
+  </html>
+ 
